@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-item {
+  @apply text-lg hover:opacity-50 cursor-pointer flex justify-center items-center  text-white font-bold;
+  min-width: unset;
+}
+.back {
+  backdrop-filter: blur(8px) brightness(0.6);
+  -webkit-mask-image: linear-gradient(180deg, #000, transparent);
+  @apply fixed top-0 w-screen h-20;
+}
+.background {
+  @apply w-full h-full absolute  object-cover;
+}
+.no-hover:hover {
+  opacity: 1;
+}
+.hover:hover {
+  @apply opacity-50;
+}
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: -50%;
+  display: flex;
+  transition: all 0.2s linear;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(-14%);
+  background-color: rgb(238 238 238 / 20%);
+  border-radius: 8px;
+  padding: 4px 8px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-transform: translateY(-14%);
+  -moz-transform: translateY(-14%);
+  -ms-transform: translateY(-14%);
+  -o-transform: translateY(-14%);
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -ms-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+}
+.hover-block-submenu:hover .submenu {
+  opacity: 1;
+}
+.new-tag {
+  position: absolute;
+  top: 0;
+  right: -5px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transform: translateY(100%);
+  background-color: rgba(231, 43, 43, 0.66);
+  -webkit-transform: translateY(100%);
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -o-transform: translateY(100%);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.box {
+  @apply flex relative items-center w-14 h-7 bg-sun cursor-pointer rounded-2xl;
+  transition: all 0.4s linear;
+}
+.ball {
+  transition: all 0.2s linear;
+
+  @apply w-7 h-7 bg-white absolute rounded-[50%] right-0;
+}
+.border-box {
+  color: #fff;
+  background-color: hsla(0, 0%, 100%, 0.12549019607843137);
+  border: 1px solid hsla(0, 0%, 100%, 0.3137254901960784);
+  font-weight: 500;
+  padding: 5px 24px;
+  border-radius: 32px;
+}
+.menu-item {
+  @apply w-[70px] h-[70px] relative flex justify-center items-center cursor-pointer;
+}

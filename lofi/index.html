@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./build/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>lofi.co - relax & focus</title>
+</head>
+
+<body>
+
+    <div class="app font-Roboto h-screen w-screen bg-slate-800 ">
+        <div class="relative overflow-hidden h-full w-full ">
+            <!-- main video background -->
+            <video loop playsinline webkit-playsinline x5-playsinline autoplay preload="auto" muted id="screen"
+                class="js-sun-mode  background opacity-100" src="./assets/video/BDR Day-Christmas ver1.mp4 ">
+            </video>
+
+            <video loop playsinline webkit-playsinline x5-playsinline autoplay preload="auto" muted id="screen2"
+                class="js-moon-mode   background opacity-0 " src="./assets/video/BDR STARRY NIGHT - Christmas ver.mp4 ">
+            </video>
+            <!-- end video background -->
+            <nav class="flex justify-evenly  ">
+                <div class="back   "></div>
+                <div class="fixed top-0 w-full z-10 px-12  flex flex-wrap">
+                    <!-- logo -->
+                    <div class="">
+                        <a href="#">
+                            <img class="h-[100px]" src="./assets/img/logo.gif" alt="" />
+                        </a>
+                    </div>
+                    <!-- end -->
+                    <!-- nav content -->
+                    <div class="nav-content ml-12 sm:flex hidden">
+                        <button class="nav-item js-hide-on-fullscreen transiton-opacity px-18px ">
+                            How it
+                            works</button>
+                        <button class=" nav-item  js-hide-on-fullscreen transiton-opacity px-18px ">
+                            Pricing</button>
+                        <button class="nav-item js-hide-on-fullscreen transiton-opacity  px-18px">
+                            Contact us</button>
+                        <div class="relative flex no-hover hover-block-submenu px-18px ">
+                            <button class="nav-item js-hide-on-fullscreen transiton-opacity ">
+                                More
+                            </button>
+                            <ul class="submenu text-white text-lg">
+                                <li class="hover px-4 pt-1"><a href="#">About us</a></li>
+                                <li class="hover px-4 pt-1"><a href="#">Submissions</a></li>
+                                <li class="hover px-4 pt-1"><a href="#">Spotify</a></li>
+                            </ul>
+
+                        </div>
+                        <button class="relative js-hide-on-fullscreen nav-item transiton-opacity px-18px">
+                            Merch
+                            <p class="new-tag text-xs font-medium ">New!</p>
+                        </button>
+                    </div>
+                    <!-- end -->
+                    <div class="pl-12 flex ml-auto">
+                        <button class="nav-item pt-2 relative hidden no-hover sm:flex  transiton-opacity  ">
+                            <input type="checkbox" class="hidden" name="checkbox" id="check">
+                            <label for="check">
+                                <div class="box">
+                                    <div class="ball">
+                                    </div>
+                                    <div class="flex absolute justify-between w-full pr-2 pl-2 ">
+                                        <img src="./assets/img/day.svg" alt="" class=" ">
+                                        <img src="https://lofi.co/static/media/day.d259f96b.svg" alt="" class="">
+                                    </div>
+                                </div>
+                            </label>
+                        </button>
+                        <input type="checkbox" hidden id="js-full-screen" name="js-full-screen">
+                        <label for="js-full-screen" class="nav-item pl-18px p-2 hidden sm:flex  transiton-opacity">
+                            <img src="./assets/img/fullscreen.svg" class="w-22px  " alt="">
+
+                        </label>
+                        <button class="nav-item pl-18px hidden sm:flex transiton-opacity ">
+                            <span class="border-box">Share</span>
+                        </button>
+                        <button class="nav-item js-hide-on-fullscreen pl-18px transiton-opacity ">
+                            <span class="border-box">Sign
+                                up</span>
+                        </button>
+                        <button class="nav-item js-hide-on-fullscreen pl-18px hidden sm:flex  transiton-opacity">
+                            Login
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            <div
+                class="absolute justify-center flex flex-col right-4 top-[50%] translate-y-[-50%] h-[140px] w-[70px] rounded-t-full rounded-b-full bg-black-60% z-20">
+                <div class="flex-1 menu-item">
+                    <div class="">
+                        <div class="text-white-50% text-2xl js-change-gener-music">
+                            <i class="fas fa-sliders-h"></i>
+                        </div>
+
+                        <div class="divisor"></div>
+                    </div>
+                </div>
+                <div class="flex-1 menu-item">
+                    <div>
+                        <span class="text-white-50% text-2xl"><i class=" fas fa-adjust"></i></span>
+                        <div class="divisor"></div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="absolute bottom-0 pb-8 left-20 ">
+                <a target="_blank" href="https://www.facebook.com/Thelinh.Info/"
+                    class="text-sm font-light text-white opacity-50">
+                    Music by - lofi.co 2022 ©
+                </a>
+            </div>
+            <div class="flex items-center absolute bottom-0 pb-18px left-[50%] translate-x-[-50%] ">
+                <audio loop preload="auto" volume="0.2" src="./assets/music/chill1.mp3" class="main-audio "></audio>
+                <img src="./assets/img/previous.svg" alt="" class="cursor-pointer js-prev h-9 w-9">
+                <div class="px-18px">
+                    <img src="./assets/img/play.svg" alt="" class=" cursor-pointer js-play w-14 h-14 ">
+                    <img src="./assets/img/pause.svg" alt="" class="hidden cursor-pointer w-14 h-14 js-pause">
+                </div>
+                <img src="./assets/img/next.svg" alt="" class=" cursor-pointer js-next h-9 w-9 ">
+            </div>
+        </div>
+    </div>
+    <script src="./src/js/app.js"></script>
+</body>
+
+</html>
